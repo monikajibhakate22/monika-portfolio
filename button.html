@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Details Popup</title>
+<style>
+#contactPopup {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0, 0.4); /* Black background with opacity */
+}
+#contactPopup .popup-content {
+  background-color: #fefefe; /* White background */
+  margin: 15% auto; /* 15% from each edge, centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be less if the screen is smaller */
+}
+#contactPopup .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+#contactPopup .close:hover,
+#contactPopup .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<button id="openContact">Contact Us</button>
+
+<div id="contactPopup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <h3>Contact Details</h3>
+    <p>Phone: 123-456-7890</p>
+    <p>Email: info@example.com</p>
+    <p>Address: Kalewada, Maharashtra 441903</p>
+  </div>
+</div>
+
+<script>
+  // Get the popup and button
+  const popup = document.getElementById("contactPopup");
+  const button = document.getElementById("openContact");
+  const closeButton = document.querySelector(".close");
+
+  // Open the popup when the button is clicked
+  button.onclick = function() {
+    popup.style.display = "block";
+  };
+
+  // Close the popup when the close button is clicked
+  closeButton.onclick = function() {
+    popup.style.display = "none";
+  };
+
+  // Close the popup if the user clicks outside of it
+  window.onclick = function(event) {
+    if (event.target == popup) {
+      popup.style.display = "none";
+    }
+  }
+</script>
+</body>
+</html>

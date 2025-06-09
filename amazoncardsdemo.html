@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .row {
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            margin-bottom: 50px;
+        }
+
+        .first-card-body {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            padding: 20px;
+
+        }
+
+        .first-card-body img {
+            width: 50%;
+            height: 35%;
+        }
+
+        .first-card-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-img {
+            width: 100%;
+        }
+
+        .card-row {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            grid-gap: 6px;
+            text-align: center;
+        }
+
+        .card-footer {
+            color: blue;
+            padding-top: 20px;
+            /* text-align: center; */
+        }
+
+        .card {
+            background-color: white;
+            margin: 10px;
+            padding: 5px;
+            height: 480px;
+            box-shadow: 2px 4px 3px gray;
+            font-family: arial;
+        }
+
+        .card-header {
+            font-size: 25px;
+            font-weight: bold;
+            padding: 15px;
+        }
+
+        section {
+            margin-top: -420px;
+        }
+
+        .first-card-img {
+            width: 100%;
+        }
+
+        .card-body {
+            height: 340px;
+        }
+        .main-heading{
+            color: black;
+            font-size: 25;
+        }
+        .card-img-row3{
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+            grid-gap: 55px;
+            padding-top: 20px;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./public/images/background-image.jpg" width="100%">
+        <div class="main-heading">
+           <li><p>Starting 1,299</p>
+            <p>Exciting launches from top brands</p></li> 
+        </div>
+        
+    </header>
+    <section>
+        <div class="row">
+            <div class="card">
+                <div class="card-header">
+                    customers most-loved products for you
+
+                </div>
+                <div class="first-card-body">
+
+                    <div>
+                        <img src="./public/images/a1.jpg">
+                        <img src="./public/images/a3.jpg">
+                    </div>
+                    <div>
+                        <img src="./public/images/a2.jpg">
+                        <img src="./public/images/a4.jpg">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="card">
+                <div class="card-header">
+                    Revamp your home in style
+
+                </div>
+                <div class="card-body">
+                    <div class="card-row">
+                        <div>
+                            <img src="./public/images/b1.jpg" class="card-img">
+                            <p>Cushion covers, bedsheets & more</p>
+                        </div>
+                        <div>
+                            <img src="./public/images/b3.jpg" class="card-img">
+                            <p>Home storage</p>
+                        </div>
+
+
+                    </div>
+                    <div class="card-row">
+                        <div>
+                            <img src="./public/images/b2.jpg" class="card-img">
+
+                            <p>Figurines, vases & more</p>
+                        </div>
+                        <div>
+                            <img src="./public/images/b4..jpg" class="card-img">
+                            <p>Lighting solutions</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+                    Explore all
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    Explore more from Small Businesses
+
+                </div>
+                <div class="card-body">
+                    <div class="card-row">
+                        <div>
+                            <img src="./public/images/c1.jpg" class="card-img">
+                            <p>Ethnic, dresses & more</p>
+                        </div>
+                        <div>
+                            <img src="./public/images/c3.jpg" class="card-img">
+                            <p>Fashion accessories</p>
+                        </div>
+
+
+                    </div>
+                    <div class="card-row">
+                        <div>
+                            <img src="./public/images/c2.jpg" class="card-img">
+                            <p>Decor</p>
+                        </div>
+                        <div>
+                            <img src="./public/images/c4.jpg" class="card-img">
+                            <p>Glassware & drinkware</p>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        Explore all
+
+                    </div>
+
+                </div>
+            </div>
+        <div class="card">
+                <div class="card-header">
+                    Appliances for your home | Up to 55% off
+
+                </div>
+                <div class="card-body">
+                    <div class="card-row">
+                        <div>
+                            <img src="./public/images/d1.jpg" class="card-img">
+                            <p> Air conditioners</p>
+                        </div>
+                        <div>
+                            <img src="./public/images/d2.jpg" class="card-img">
+                            <p>Refrigerators</p>
+                        </div>
+                    </div>
+                    <div class="card-row">
+                        <div>
+                            <img src="./public/images/d3.jpg" class="card-img">
+                            <p>Microwaves</p>
+                        </div>
+                        <div>
+                            <img src="./public/images/d4.jpg" class="card-img">
+                            <p>
+                                Washing machines</p>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        See more
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="row">
+            <div class="card">
+                <div class="card-header">
+                    Starting ₹149 | Headphones
+
+                </div>
+                <div class="card-body">
+                    <div class="card-row">
+                        <div>
+                            <img src="./public/images/r2a1.jpg" class="card-img">
+                            <p>boAt
+                                Starting ₹249 | boAt</p>
+                        </div>
+                        <div>
+                            <img src="./public/images/r2a2.jpg" class="card-img">
+                            <p>boAt
+                                Starting ₹249 | boAt</p>
+                        </div>
+                    </div>
+                    <div class="card-row">
+                        <div>
+                            <img src="./public/images/r2a3.jpg" class="card-img">
+                            <p>Starting ₹649 | Noise
+
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./public/images/r2a4" class="card-img">
+                            <p>Starting ₹149 | Zebronics</p>
+                        </div>
+
+                    </div>
+
+                     <div class="card-footer">
+                        See all offers
+
+                    </div>
+               </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Automotive essentials | Up to 60% off
+
+                </div>
+                <div class="card-body">
+                    <div class="card-row">
+                        <div>
+                            <img src="./public/images/r2b1.jpg" class="card-img">
+                            <p>Cleaning accessories
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./public/images/r2b2.jpg" class="card-img">
+                            <p>
+                                Tyre & rim care</p>
+                        </div>
+                    </div>
+                    <div class="card-row">
+                        <div>
+                            <img src="./public/images/r2b3.jpg" class="card-img">
+
+                            <p>Helmets</p>
+                            
+                        </div>
+                        <div>
+                            <img src="./public/images/r2b4.jpg" class="card-img">
+                            <p>Vaccum cleaner</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+                    See more
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    Starting ₹199 | Amazon Brands & more
+                </div>
+                <div class="card-body">
+                    <div class="card-row">
+                        <div>
+                            <img src="./public/images/r2c1.jpg" class="card-img">
+                            <p>Starting ₹199 | Bedsheets
+
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./public/images/r2c2.jpg" class="card-img">
+                            <p>Starting ₹199 | curtains
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <div class="card-row">
+                        <div>
+                            <img src="./public/images/r2c3.jpg" class="card-img">
+                            <p>Minimum 40% off | Ironing board & more
+                            </p>
+                        </div>
+                        <div>
+                            <img src="./public/images/r2c4.jpg" class="card-img">
+                            <p>Up to 60% off | Home decor</p>
+                     </div>
+
+                    </div>
+                    <div class="card-footer">
+                        See more
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    Up to 60% off | Professional tools, testing...
+
+                </div>
+                <div class="card-body">
+                    <div class="card-row">
+                        <div>
+                            <img src="./public/images/r2d1.jpg" class="card-img">
+                            <p> Professional tools</p>
+                        </div>
+                        <div>
+                            <img src="./public/images/r2d2.jpg" class="card-img">
+                            <p> Measuring instruments</p>
+                        </div>
+                    </div>
+                    <div class="card-row">
+                        <div>
+                            <img src="./public/images/r2d3.jpg" class="card-img">
+                            <p>Cleanign supplies</p>
+                        </div>
+                        <div>
+                            <img src="./public/images/r2d4.jpg" class="card-img">
+                            <p>Medical supplies</p>
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        See more
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card-heading">
+                
+              <span class="card-header"> Up to 60% off | Kitchen essentials from Emerging businesses</span>
+              <div class="card-img-row3">
+                <div>
+                    <img src="./public/images/r31.jpg">
+                    </div>
+                    <div>
+                    <img src="./public/images/r32.jpg">
+                    </div>
+                    <div><img src="./public/images/r33.jpg"></div>
+                   <div><img src="./public/images/r34.jpg"></div>
+                   <div><img src="./public/images/r35.jpg"></div>
+                   <div><img src="./public/images/r36.jpg"></div>
+                </div>
+              </div>  
+            </div>
+
+        </div>
+        
+    </section>
+
+</body>
+
+</html>
