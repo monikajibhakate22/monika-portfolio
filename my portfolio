@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+
+    
+</head>
+
+<body class="container-fluid">
+    <h1>My portfolio</h1>
+    <header>
+        <nav class=" navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <span class="navbar-brand">Monika Jibhakate</span>
+                <ul class="navbar-nav navbar-collapse collapse">
+                    <!-- <li><a href="#contact" onclick="showContact()">Contact</a></li> -->
+                    
+                    <div class="header">
+                        <!-- <div class="contact">
+                            <button id="openContact" class="btn btn-dark">Contact</button> -->
+                           
+
+                            <!-- Contact Popup -->
+<div class="contact">
+  <button id="openContact" class="btn btn-dark m-lg-3" >Contact</button>
+
+  <div id="contactPopup" class="popup" style="display: none;">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closeContact()">&times;</span>
+      <h2>Contact Details</h2>
+      <p>Email: monikajibhakate7@gmail.com</p>
+      <p>Phone: +91 9284155672</p>
+      <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/monika-jibhakate-7b71622a8" target="_blank">
+          View
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+                        </div>
+                        <div class="Resume">
+                            <button onclick="openResume()" class="btn btn-dark m-lg-3">My Resume</button>
+                        </div>
+                        
+                        
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button data-bs-toggle="dropdown" class="btn btn-dark dropdown-toggle ">My Projects</button>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"> <a href="./shoper-template.html"> <span
+                                                class="dropdown-item-text">shoper-template</span></a></li>
+                                    <li class="dropdown-item"> <a href="./amazoncardsdemo.html"> <span
+                                                class="dropdown-item-text">Amazon-cards</span></a></li>
+    
+                                </ul>
+                            </div>
+                        </li>
+    
+    
+                    </ul>
+                </div>
+    
+                    
+
+    </header>
+    <img src="./public/images/monika.jpg" width="100%" height="400%">
+
+    <script>
+
+        document.getElementById("openContact").addEventListener("click", function(){
+            document.getElementById("contactPopup").style.display="block";
+        });
+
+        function closeContact(){
+            document.getElementById("contactPopup").style.display="none";
+        }
+
+
+// Get the popup and button
+const popup = document.getElementById("contactPopup");
+  const button = document.getElementById("openContact");
+  const closeButton = document.querySelector(".close");
+
+  // Open the popup when the button is clicked
+  button.onclick = function() {
+    popup.style.display = "block";
+  };
+
+  // Close the popup when the close button is clicked
+  closeButton.onclick = function() {
+    popup.style.display = "none";
+  };
+
+  // Close the popup if the user clicks outside of it
+  window.onclick = function(event) {
+    if (event.target == popup) {
+      popup.style.display = "none";
+    }
+  }
+
+
+
+  
+        // function showContact(){
+        //     const contactSection= document.getElementById("contact");
+        //     contactSection.style.display="block";
+
+        //     contactSection.scrollIntoView({
+        //         behavior: "smooth"
+        //     });
+        // }
+
+        function openResume(){
+            window.open('Monika-resume.pdf', '_blank');
+            
+        }
+
+//         $(document).ready(function(){
+//             $('#contactBtn').click(function(){
+//                 $('#contactPopup').fadeIn();
+//             });
+//             $('#closePopup').click(function(){
+//                 $('#contactPopup').fadeOut();
+//             });
+//         });
+
+//         document.getElementById("contactBtn").addEventListener("click", function () {
+//     document.getElementById("contactPopup").style.display = "block";
+//   });
+
+//   document.querySelector(".close-btn").addEventListener("click", function () {
+//     document.getElementById("contactPopup").style.display = "none";
+//   });
+
+//   window.addEventListener("click", function (e) {
+//     if (e.target === document.getElementById("contactPopup")) {
+//       document.getElementById("contactPopup").style.display = "none";
+//     }
+//   });
+
+
+   
+    </script>
+
+</body>
+
+</html>
